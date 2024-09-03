@@ -25,14 +25,16 @@ Además, para corroborar que hay datos, se hace la siguiente consulta, tal como 
 #### b.	Pedidos cuyo cliente no existe en la tabla Clientes
 Para ello, se toma la parte de los clientes que no existen en la tabla Clientes, para ello, basándonos en la imagen 4, tomara como nulo los valores de COD_CLIE que no coincida el on pedidos.COD_CLIE = clientes.COD_CLIE de la query de la IMAGEN 5, para ello se debe considerar que clientes.COD_CLIE sea NULL. Además, en la última imagen mencionada, piden que sea de tipo VIEW, por lo que se hace VIEW PEDIDOCLIE AS
 
-(colocar imagen)
+![image](https://github.com/user-attachments/assets/419a5911-e0cb-457c-b398-98a81f5e7df8)
 
 ** IMAGEN 4:**  Observación del RIGHT OUTER JOIN. Elaboración Propia
 
-(colocar imagen)
+![image](https://github.com/user-attachments/assets/9a11425b-ba9b-4df1-b335-61f85ed2d5b5)
+
 ** IMAGEN 5:**  VIEW PEDIDOCLIE. Elaboración Propia
 
-(colocar imagen)
+![image](https://github.com/user-attachments/assets/ae112f47-7687-41b7-9a22-184d420199b7)
+
 ** IMAGEN 6:**  Tabla PEDIDOCLIE. Elaboración Propia 
 
 ###•	Parte 2: Crear vistas para mostrar:
@@ -40,23 +42,32 @@ Para ello, se toma la parte de los clientes que no existen en la tabla Clientes,
 
 **Paso 1:** Para ello, previamente, debemos realizar la query, considerando el estado de Pedido, Región de aquellos pedidos facturados en junio, considerar para ello que el código de cliente exista en la tabla Cliente y VAL_MONT_SOLI. Para el campo MES se transformó el FEC_FACT usando TO_CHAR(pedidos.FEC_FACT,’Month’) con la finalidad de obtener el mes del date FEC_FACT. Si consideramos que el código de cliente exista en la tabla Cliente, debemos considerar que no sea de tipo NULL. La query es la siguiente:
 
-(Colocar img)
+![image](https://github.com/user-attachments/assets/455b0581-ae4b-4b71-ac81-28da19aeaa4c)
+
 **IMAGEN 7:** Query y resultado, considerando que no sea NULL, sea de Junio y que exista el COD_CLIE
 
 **Paso 2:** Luego, considerando los campos COD_REGI, VAL_ESTA_PEDI, MES y VAL_MONT_SOLI, se realiza la agrupación de estos campos usando group by, considerando que para acumular se usa SUM (VAL_MONT_SOLI), tal como se detalla en la imagen 8:
+
+![image](https://github.com/user-attachments/assets/ed4ee1d0-2cee-4739-b364-15cc5ad19edd)
 
 **IMAGEN 8:** Acumulado de atributo VAL_MONT_SOLI agrupado por estado de Pedido, Región de aquellos pedidos facturados en junio, considerar para ello que el código de cliente exista en la tabla Cliente
 
 **Paso 3:** De acuerdo con la query del paso 1, se realiza el CREATE VIEW LISTACLIENTESJUNIO para reducir el tamaño del código, tal como se observa en la imagen:
 
+![image](https://github.com/user-attachments/assets/9ecd6367-0892-410a-951c-05c8270e6447)
+
 ** IMAGEN 9:**  Creación de la VIEW LISTACLIENTESJUNIO basado en la query del paso 1
 	
 Paso 4: De acuerdo con la query del paso 2, se realiza el CREATE VIEW AGRUPACIONFINALCLIENTESJUNIO para reducir el tamaño del código, tal como se observa en la imagen:
+
+![image](https://github.com/user-attachments/assets/c6f4e57d-169a-46dd-bd2a-a43052823935)
 
 ** IMAGEN 10:**  Creación de la VIEW AGRUPACIONFINALCLIENTESJUNIO basado en la query del paso 2
 
 De acuerdo con el problema, piden la VIEW. Para corroborar el VIEW AGRUPACIONFINALCLIENTESJUNIO, se realiza la petición:
 
+
+![image](https://github.com/user-attachments/assets/49f2463a-4b81-49c5-9fe4-ac254ca96383)
 
 **IMAGEN 11:** Comprobacion de la VIEW pedida AGRUPACIONFINALCLIENTESJUNIO
 
@@ -64,13 +75,20 @@ De acuerdo con el problema, piden la VIEW. Para corroborar el VIEW AGRUPACIONFIN
 
 **Paso 1:** De acuerdo con la query del paso 2 del inciso a, se añade otro campo de conteo de registros, el COUNT(*), pero adicionamos el HAVING GROUP  COUNT(*) > 500, pues piden que se vea si y solo si tengan mas de 500 registros agrupados. Tal como se observa en la imagen 12: 
 
+![image](https://github.com/user-attachments/assets/004fea08-2b49-4993-af42-998c2ef6272b)
 
 **IMAGEN 12**
 
 **Paso 2**: De acuerdo con la query del paso 3 del inciso a, se usa el  VIEW LISTACLIENTESJUNIO para reducir el tamaño del código dentro del primer FROM y se hace un CREATE VIEW AGRUPACIONESCLIENTESSUPERIORES, pues piden la vista:
 
+
+![image](https://github.com/user-attachments/assets/937c8711-4094-4505-b87f-e8bc5c15ef01)
+
+
 **IMAGEN 13: **Creación de la VIEW pedida en el Inciso B
 
 **Paso 3:** Para comprobar, se realiza el select * from AGRUPACIONESCLIENTESSUPERIORES.
+
+![image](https://github.com/user-attachments/assets/617716a2-a060-407f-8242-e7ecb821626c)
 
 **IMAGEN 14:** Comprobación de la VIEW pedida en el Inciso B
