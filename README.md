@@ -1,4 +1,4 @@
-Previamente se tuvo que realizar la query de la imagen A, del cual permite realizar la cantidad de clientes registraos en la tabla clientes coincida con la de la tabla de pedidos , tal como se observa en la imagen A. En la Imagen B se realiza el conteo de registros de la query,:
+Previamente se tuvo que realizar la query de la imagen A, se utilizo RIGHT OUTER JOIN (se explicara en las siguientes lineas), del cual permite realizar la cantidad de clientes registraos en la tabla clientes coincida con la de la tabla de pedidos , tal como se observa en la imagen A. En la Imagen B se realiza el conteo de registros de la query,:
 
 ![image](https://github.com/user-attachments/assets/8b08e070-c476-4921-ae40-a19cfa42908e)
 
@@ -10,7 +10,7 @@ Previamente se tuvo que realizar la query de la imagen A, del cual permite reali
 
 ![image](https://github.com/user-attachments/assets/f5ac5473-0f59-449f-9f2f-2c4c7fc1b1ad)
 
-**IMAGEN C:** Conteo de registros de la query
+**IMAGEN C:** Ejecucion de la query cuando clientes.COD_CLIE no sea NULL 
 
 ![image](https://github.com/user-attachments/assets/774a135a-3422-4f96-a54b-337fa1e3ea88)
 
