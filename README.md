@@ -13,7 +13,7 @@ Luego, para corroborarlo, se puede ver en la parte izquierda, en el apartado de 
 
 ![image](https://github.com/user-attachments/assets/0691a832-5155-49d6-ac71-3dc96007c05a)
 
-**IMAGEN 2**: VIEW CLIENTESINPEDIDOFACT. Elaboración Propia
+**IMAGEN 2:** VIEW CLIENTESINPEDIDOFACT. Elaboración Propia
 
 Además, para corroborar que hay datos, se hace la siguiente consulta, tal como se aprecia en la IMAGEN 3:
 
@@ -27,15 +27,15 @@ Para ello, se toma la parte de los clientes que no existen en la tabla Clientes,
 
 ![image](https://github.com/user-attachments/assets/419a5911-e0cb-457c-b398-98a81f5e7df8)
 
-** IMAGEN 4:**  Observación del RIGHT OUTER JOIN. Elaboración Propia
+**IMAGEN 4:** Observación del RIGHT OUTER JOIN. Elaboración Propia
 
 ![image](https://github.com/user-attachments/assets/9a11425b-ba9b-4df1-b335-61f85ed2d5b5)
 
-** IMAGEN 5:**  VIEW PEDIDOCLIE. Elaboración Propia
+**IMAGEN 5:**  VIEW PEDIDOCLIE. Elaboración Propia
 
 ![image](https://github.com/user-attachments/assets/ae112f47-7687-41b7-9a22-184d420199b7)
 
-** IMAGEN 6:**  Tabla PEDIDOCLIE. Elaboración Propia 
+**IMAGEN 6:** Tabla PEDIDOCLIE. Elaboración Propia 
 
 ###•	Parte 2: Crear vistas para mostrar:
 ####a.	Acumulado de atributo VAL_MONT_SOLI agrupado por estado de Pedido, Región de aquellos pedidos facturados en junio, considerar para ello que el código de cliente exista en la tabla Cliente
@@ -56,13 +56,13 @@ Para ello, se toma la parte de los clientes que no existen en la tabla Clientes,
 
 ![image](https://github.com/user-attachments/assets/9ecd6367-0892-410a-951c-05c8270e6447)
 
-** IMAGEN 9:**  Creación de la VIEW LISTACLIENTESJUNIO basado en la query del paso 1
+**IMAGEN 9:**  Creación de la VIEW LISTACLIENTESJUNIO basado en la query del paso 1
 	
 Paso 4: De acuerdo con la query del paso 2, se realiza el CREATE VIEW AGRUPACIONFINALCLIENTESJUNIO para reducir el tamaño del código, tal como se observa en la imagen:
 
 ![image](https://github.com/user-attachments/assets/c6f4e57d-169a-46dd-bd2a-a43052823935)
 
-** IMAGEN 10:**  Creación de la VIEW AGRUPACIONFINALCLIENTESJUNIO basado en la query del paso 2
+**IMAGEN 10:**  Creación de la VIEW AGRUPACIONFINALCLIENTESJUNIO basado en la query del paso 2
 
 De acuerdo con el problema, piden la VIEW. Para corroborar el VIEW AGRUPACIONFINALCLIENTESJUNIO, se realiza la petición:
 
@@ -85,7 +85,7 @@ De acuerdo con el problema, piden la VIEW. Para corroborar el VIEW AGRUPACIONFIN
 ![image](https://github.com/user-attachments/assets/937c8711-4094-4505-b87f-e8bc5c15ef01)
 
 
-**IMAGEN 13: **Creación de la VIEW pedida en el Inciso B
+**IMAGEN 13:** Creación de la VIEW pedida en el Inciso B
 
 **Paso 3:** Para comprobar, se realiza el select * from AGRUPACIONESCLIENTESSUPERIORES.
 
