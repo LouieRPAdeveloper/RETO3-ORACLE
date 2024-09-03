@@ -35,7 +35,10 @@ Para ello, se toma la parte de los clientes que no existen en la tabla Clientes,
 
 ![image](https://github.com/user-attachments/assets/ae112f47-7687-41b7-9a22-184d420199b7)
 
-	**IMAGEN 6:** Consulta PEDIDOCLIE. Elaboración Propia 
+![image](https://github.com/user-attachments/assets/79ceab03-cad7-4ed5-aa68-51a7895dc19b)
+**IMAGEN 5 a:**  Comprobacion de la creacion VIEW PEDIDOCLIE. Elaboración Propia
+
+**IMAGEN 6:** Consulta PEDIDOCLIE. Elaboración Propia 
 
 ### •	Parte 2: Crear vistas para mostrar:
 #### a.	Acumulado de atributo VAL_MONT_SOLI agrupado por estado de Pedido, Región de aquellos pedidos facturados en junio, considerar para ello que el código de cliente exista en la tabla Cliente
