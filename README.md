@@ -21,7 +21,8 @@ Además, para corroborar que hay datos, se hace la siguiente consulta, tal como 
 
 **IMAGEN 3:** Consulta CLIENTESINPEDIDOFACT. Elaboración Propia
 
-(imagen)
+![image](https://github.com/user-attachments/assets/451a9b3a-af8b-4caf-a4f6-91b675859286)
+
 
 **IMAGEN 3 A:** Conteo de registros de CLIENTESINPEDIDOFACT. Elaboración Propia
 
