@@ -109,7 +109,13 @@ De acuerdo con el problema, piden la VIEW. Para corroborar el VIEW AGRUPACIONFIN
 
 **IMAGEN 13 A:** VIEW pedida en el Inciso B
 
-**Paso 3:** Para comprobar, se realiza el select * from AGRUPACIONESCLIENTESSUPERIORES.
+**Paso 2 A**: De acuerdo con el paso 2, ejecutamos el codigo sombreado con azul, para comprobar que en el Total_Count, la cantidad de registros no supera los 20 unidades
+
+![image](https://github.com/user-attachments/assets/976aa0b6-879e-4220-b8a9-1d64e25e3a45)
+
+**IMAGEN 13 B:** Ejecucion de Query
+
+**Paso 3:** Para comprobar, se realiza el select * from AGRUPACIONESCLIENTESSUPERIORES, del cual no se puede ver, ya que no hay 500 registros en cada uno.
 
 ![image](https://github.com/user-attachments/assets/617716a2-a060-407f-8242-e7ecb821626c)
 
