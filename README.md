@@ -1,5 +1,5 @@
 ### •	Parte 1: Usando INNER JOIN crear vistas que generen:
-####a.	Clientes que no tienen pedido facturado
+#### a.	Clientes que no tienen pedido facturado
 
 La resolución puede observarlo en la imagen 1. Para ello, se utilizó el RIGHT OUTER JOIN, pues permite que conserve una unión entre dos tablas con una cláusula de unión explícita, preservando las filas no coincidentes de la segunda tabla.
 
@@ -37,8 +37,8 @@ Para ello, se toma la parte de los clientes que no existen en la tabla Clientes,
 
 **IMAGEN 6:** Tabla PEDIDOCLIE. Elaboración Propia 
 
-###•	Parte 2: Crear vistas para mostrar:
-####a.	Acumulado de atributo VAL_MONT_SOLI agrupado por estado de Pedido, Región de aquellos pedidos facturados en junio, considerar para ello que el código de cliente exista en la tabla Cliente
+### •	Parte 2: Crear vistas para mostrar:
+#### a.	Acumulado de atributo VAL_MONT_SOLI agrupado por estado de Pedido, Región de aquellos pedidos facturados en junio, considerar para ello que el código de cliente exista en la tabla Cliente
 
 **Paso 1:** Para ello, previamente, debemos realizar la query, considerando el estado de Pedido, Región de aquellos pedidos facturados en junio, considerar para ello que el código de cliente exista en la tabla Cliente y VAL_MONT_SOLI. Para el campo MES se transformó el FEC_FACT usando TO_CHAR(pedidos.FEC_FACT,’Month’) con la finalidad de obtener el mes del date FEC_FACT. Si consideramos que el código de cliente exista en la tabla Cliente, debemos considerar que no sea de tipo NULL. La query es la siguiente:
 
@@ -58,7 +58,7 @@ Para ello, se toma la parte de los clientes que no existen en la tabla Clientes,
 
 **IMAGEN 9:**  Creación de la VIEW LISTACLIENTESJUNIO basado en la query del paso 1
 	
-Paso 4: De acuerdo con la query del paso 2, se realiza el CREATE VIEW AGRUPACIONFINALCLIENTESJUNIO para reducir el tamaño del código, tal como se observa en la imagen:
+**Paso 4:** De acuerdo con la query del paso 2, se realiza el CREATE VIEW AGRUPACIONFINALCLIENTESJUNIO para reducir el tamaño del código, tal como se observa en la imagen:
 
 ![image](https://github.com/user-attachments/assets/c6f4e57d-169a-46dd-bd2a-a43052823935)
 
@@ -71,7 +71,7 @@ De acuerdo con el problema, piden la VIEW. Para corroborar el VIEW AGRUPACIONFIN
 
 **IMAGEN 11:** Comprobacion de la VIEW pedida AGRUPACIONFINALCLIENTESJUNIO
 
-####b.	En base a la consulta anterior, mostrar una columna adicional que contenga el total de registros por cada agrupación y condicionar a que se muestre solo aquellos que tengan más de 500 registros agrupados
+#### b.	En base a la consulta anterior, mostrar una columna adicional que contenga el total de registros por cada agrupación y condicionar a que se muestre solo aquellos que tengan más de 500 registros agrupados
 
 **Paso 1:** De acuerdo con la query del paso 2 del inciso a, se añade otro campo de conteo de registros, el COUNT(*), pero adicionamos el HAVING GROUP  COUNT(*) > 500, pues piden que se vea si y solo si tengan mas de 500 registros agrupados. Tal como se observa en la imagen 12: 
 
