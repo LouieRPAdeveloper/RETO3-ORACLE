@@ -21,6 +21,10 @@ Además, para corroborar que hay datos, se hace la siguiente consulta, tal como 
 
 **IMAGEN 3:** Consulta CLIENTESINPEDIDOFACT. Elaboración Propia
 
+(imagen)
+
+**IMAGEN 3 A:** Conteo de registros de CLIENTESINPEDIDOFACT. Elaboración Propia
+
 ### •	Usando INNER JOIN crear vistas que generen:
 #### b.	Pedidos cuyo cliente no existe en la tabla Clientes
 Para ello, se toma la parte de los clientes que no existen en la tabla Clientes, para ello, basándonos en la imagen 4, tomara como nulo los valores de COD_CLIE que no coincida el on pedidos.COD_CLIE = clientes.COD_CLIE de la query de la IMAGEN 5, para ello se debe considerar que clientes.COD_CLIE sea NULL. Además, en la última imagen mencionada, piden que sea de tipo VIEW, por lo que se hace VIEW PEDIDOCLIE AS
@@ -35,11 +39,13 @@ Para ello, se toma la parte de los clientes que no existen en la tabla Clientes,
 
 ![image](https://github.com/user-attachments/assets/79ceab03-cad7-4ed5-aa68-51a7895dc19b)
 
-**IMAGEN 5 a:**  Comprobacion de la creacion VIEW PEDIDOCLIE. Elaboración Propia
+**IMAGEN 5 A:**  Comprobacion de la creacion VIEW PEDIDOCLIE. Elaboración Propia
 
 ![image](https://github.com/user-attachments/assets/ae112f47-7687-41b7-9a22-184d420199b7)
 
-**IMAGEN 6:** Consulta PEDIDOCLIE. Elaboración Propia 
+**IMAGEN 6:** Consulta PEDIDOCLIE. Elaboración Propia
+
+**IMAGEN 6 A:** Consulta numero de registros de PEDIDOCLIE. Elaboración Propia
 
 ### •	Parte 2: Crear vistas para mostrar:
 #### a.	Acumulado de atributo VAL_MONT_SOLI agrupado por estado de Pedido, Región de aquellos pedidos facturados en junio, considerar para ello que el código de cliente exista en la tabla Cliente
