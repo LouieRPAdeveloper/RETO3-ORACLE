@@ -72,6 +72,10 @@ Para ello, se toma la parte de los clientes que no existen en la tabla Clientes,
 
 **IMAGEN 10:**  Creación de la VIEW AGRUPACIONFINALCLIENTESJUNIO basado en la query del paso 2
 
+![image](https://github.com/user-attachments/assets/f81c5a75-7151-4928-ba2d-46cbb45c8ffe)
+
+**IMAGEN 10:**   VIEW AGRUPACIONFINALCLIENTESJUNIO 
+
 De acuerdo con el problema, piden la VIEW. Para corroborar el VIEW AGRUPACIONFINALCLIENTESJUNIO, se realiza la petición:
 
 
