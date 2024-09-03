@@ -97,13 +97,17 @@ De acuerdo con el problema, piden la VIEW. Para corroborar el VIEW AGRUPACIONFIN
 
 **IMAGEN 12**
 
-**Paso 2**: De acuerdo con la query del paso 3 del inciso a, se usa el  VIEW LISTACLIENTESJUNIO para reducir el tamaño del código dentro del primer FROM y se hace un CREATE VIEW AGRUPACIONESCLIENTESSUPERIORES, pues piden la vista:
+**Paso 2**: De acuerdo con la query del paso 3 del inciso a, se usa el  VIEW LISTACLIENTESJUNIO para reducir el tamaño del código dentro del primer FROM y se hace un CREATE VIEW AGRUPACIONESCLIENTESSUPERIORES, pues piden la vista, modificando Count(*) AS Total_Count para el conteo general de los registros:
 
 
 ![image](https://github.com/user-attachments/assets/937c8711-4094-4505-b87f-e8bc5c15ef01)
 
-
 **IMAGEN 13:** Creación de la VIEW pedida en el Inciso B
+
+
+![image](https://github.com/user-attachments/assets/9d9219ec-9b70-412b-a28a-1e17c53df3f8)
+
+**IMAGEN 13 A:** VIEW pedida en el Inciso B
 
 **Paso 3:** Para comprobar, se realiza el select * from AGRUPACIONESCLIENTESSUPERIORES.
 
