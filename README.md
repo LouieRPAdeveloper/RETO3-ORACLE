@@ -1,3 +1,21 @@
+Previamente se tuvo que realizar la query de la imagen A, del cual permite realizar la cantidad de clientes registraos en la tabla clientes coincida con la de la tabla de pedidos , tal como se observa en la imagen A. En la Imagen B se realiza el conteo de registros de la query,:
+
+![image](https://github.com/user-attachments/assets/8b08e070-c476-4921-ae40-a19cfa42908e)
+
+**IMAGEN A:** Creación de la query
+
+![image](https://github.com/user-attachments/assets/d16a85a7-4029-40f4-a885-5dc383e6db81)
+
+**IMAGEN B:** Conteo de registros de la query
+
+![image](https://github.com/user-attachments/assets/f5ac5473-0f59-449f-9f2f-2c4c7fc1b1ad)
+
+**IMAGEN C:** Conteo de registros de la query
+
+![image](https://github.com/user-attachments/assets/774a135a-3422-4f96-a54b-337fa1e3ea88)
+
+**IMAGEN D:** Conteo de registros de la query cuando coinciden los campos on pedidos.COD_CLIE = clientes.COD_CLIE y que clientes.COD_CLIE no sea NULL 
+
 ### •	Parte 1: Usando INNER JOIN crear vistas que generen:
 #### a.	Clientes que no tienen pedido facturado
 
