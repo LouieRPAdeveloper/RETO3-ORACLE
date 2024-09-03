@@ -46,6 +46,8 @@ Para ello, se toma la parte de los clientes que no existen en la tabla Clientes,
 
 **IMAGEN 6:** Consulta PEDIDOCLIE. Elaboración Propia
 
+![image](https://github.com/user-attachments/assets/4a9fa3aa-85c8-488f-9137-bf89bf9049bd)
+
 **IMAGEN 6 A:** Consulta numero de registros de PEDIDOCLIE. Elaboración Propia
 
 ### •	Parte 2: Crear vistas para mostrar:
