@@ -61,6 +61,10 @@ Para ello, se toma la parte de los clientes que no existen en la tabla Clientes,
 ![image](https://github.com/user-attachments/assets/9ecd6367-0892-410a-951c-05c8270e6447)
 
 **IMAGEN 9:**  Creación de la VIEW LISTACLIENTESJUNIO basado en la query del paso 1
+
+![image](https://github.com/user-attachments/assets/29607b61-79ff-4370-9831-e21897f0e62e)
+
+**IMAGEN 9 A:**  Comprobación de la VIEW LISTACLIENTESJUNIO basado en la query del paso 1
 	
 **Paso 4:** De acuerdo con la query del paso 2, se realiza el CREATE VIEW AGRUPACIONFINALCLIENTESJUNIO para reducir el tamaño del código, tal como se observa en la imagen:
 
