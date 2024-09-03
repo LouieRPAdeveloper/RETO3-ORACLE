@@ -19,7 +19,7 @@ Además, para corroborar que hay datos, se hace la siguiente consulta, tal como 
 
 ![image](https://github.com/user-attachments/assets/06143ca1-c4e5-4d7d-afb1-ff625bdd7a03)
 
-**IMAGEN 3:** Tabla CLIENTESINPEDIDOFACT. Elaboración Propia
+**IMAGEN 3:** Consulta CLIENTESINPEDIDOFACT. Elaboración Propia
 
 ### •	Usando INNER JOIN crear vistas que generen:
 #### b.	Pedidos cuyo cliente no existe en la tabla Clientes
@@ -35,7 +35,7 @@ Para ello, se toma la parte de los clientes que no existen en la tabla Clientes,
 
 ![image](https://github.com/user-attachments/assets/ae112f47-7687-41b7-9a22-184d420199b7)
 
-**IMAGEN 6:** Tabla PEDIDOCLIE. Elaboración Propia 
+	**IMAGEN 6:** Consulta PEDIDOCLIE. Elaboración Propia 
 
 ### •	Parte 2: Crear vistas para mostrar:
 #### a.	Acumulado de atributo VAL_MONT_SOLI agrupado por estado de Pedido, Región de aquellos pedidos facturados en junio, considerar para ello que el código de cliente exista en la tabla Cliente
